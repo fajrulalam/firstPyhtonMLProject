@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Model Linear Regression</title>
+    
+        <link  rel="stylesheet" href="/static/style.css"/>
+    </head>
+
+    <body>
+        
+
+        <div class="wrapper">
+            <div class="title">Prediksi Nilai Ujian</div>
+            <form method="POST", action="{{url_for('home')}}">
+                <div class="heading"><label class="head">Jenis Kelamin</label><br></div>
+                <div class="input"><input type="radio" name="a1" id="a1_option1" value="1"><label for="a1_option1" class="opsi">   Laki-laki </label></div>
+                <div class="input"><input type="radio" name="a1"id="a1_option2" value="0"><label for="a1_option2">   Perempuan</label><br></div>
+                
+                <br><br>
+
+                <div class="heading"><label class="head">Ras/Etnis</label><br><br></div>
+                <div class="input-selection"> 
+                    <select name="b1" id="ras">
+                        <option value="0">Group A</option>
+                        <option value="1">Group B</option>
+                        <option value="2">Group C</option>
+                        <option value="3">Group D</option>
+                        <option value="4">Group E</option>
+                    </select>
+                </div>
+                
+
+                <br><br>
+                
+                
+                <div class="heading"><label class="head">Jenis Makan di Sekolah</label><br></div>
+                <div class="input"><input type="radio" name="c1" id="c1_option1" value="1"><label for="c1_option1">   Standard</label></div>
+                <div class="input"><input type="radio" name="c1"id="c1_option2" value="0"><label for="c1_option2">   Bantuan Pemerintah</label><br></div>
+                
+                
+                <br><br>
+
+                <div class="heading"><label class="head">Mengikuti Kursus</label><br></div>
+                <div class="input"> <input type="radio" name="d1" id="d1_a" value="1"><label for="d1_a">   Ya</label></div>
+                
+                <div class="input"> <input type="radio" name="d1" id="d1_b" value="0"><label for="d1_b">   Tidak</label><br></div>
+                
+                
+                <br><br>
+
+                <div class="head"><label class="head">Pendidikan terakhir orang tua</label><br></div>
+                <div class="input"><input type="radio" name="e1" id="e1_a" value="0"><label for="e1_a">   Tidak lulus SLTA</label></div>
+                <div class="input" id="SLTA"><input type="radio" name="e1" id="e1_b" value="1"><label for="e1_b">   SLTA</label><br></div>
+                <div class="input"><input type="radio" name="e1" id="e1_c" value="2"><label for="e1_c">   Tidak Lulus Kuliah</label></div>
+                <div class="input"><input type="radio" name="e1" id="e1_d" value="3"><label for="e1_d">   Sarjana Terapan</label><br></div>
+                <div class="input"><input type="radio" name="e1" id="e1_e" value="4"><label for="e1_e">   Sarjana</label></div>
+                <div class="input" id="Magister"><input type="radio" name="e1" id="e1_f" value="5"><label for="e1_f">   Magister</label><br></div>
+                
+                
+                
+                
+                
+                
+                <br><br><br>
+                
+                <input class="sumbit" type="submit" , value='Prediksi'>
+            </form>
+
+           
+               
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Model Linear Regression</title>
+    
+        <link  rel="stylesheet" href="/static/style.css"/>
+    </head>
+
+    <body>
+        
+
+        <div class="wrapper">
+            <div class="title">Hasil Prediksi</div>
+            <div class="prediction">
+                <p class="prediction-result">{{data}}</p>
+            </div>
+            
+            
+            {% if  76 < data <= 85 %}
+            <div class="comments">
+                <p class="titl-komentar" id="good">Cukup baik</p>
+                <p class="rekomendasi">Nilai Anda sudah cukup untuk mendapat nilai AB. Jika Anda ingin mendapat nilai A, maka belajarlah lebih giat lagi. Mengikuti kursus di</p> 
+                <p class="iklan">Fajpeg Academy</p> 
+                <p class="rekomendasi">akan sangat membantu</p>
+            </div>
+            {% elif  85 < data <= 90 %}
+            <div class="comments">
+                <p class="titl-komentar" id="really-good">Baik</p>
+                <p class="rekomendasi">Nilai Anda diperkirakan akan baik sehingga bisa mendapat nilai A. Eiitss, tapi untuk menjadi ini realita, kamu harus terus belajar! Mengikuti kursus di</p>  
+                <p class="iklan">Fajpeg Academy</p> 
+                <p class="rekomendasi">akan membantu Anda menjadikan prediksi ini menjadi realita</p>
+            </div>
+            {% elif  90 < data <= 100 %}
+            <div class="comments">
+                <p class="titl-komentar" id="excellent">Sangat Baik!</p>
+                <p class="rekomendasi">Wah nilaimu diprediksi sangat baik! Kemungkinan besar kamu ini ikut kursus, ya?</p>
+                <p class="iklan">Fajpeg Academy</p> 
+                <p class="rekomendasi">sedang mencari calon tutor seperti kamu. Bila nilai ini terealisasi, datanglah ke</p> 
+                <p class="iklan">Fajpeg Academy</p> 
+                <p class="rekomendasi">untuk mendaftarkan diri sebagai mentor. Kontak kami jika Anda tertarik, ya! Gajinya gedhe kok. 😉✌️</p>
+                
+            </div>
+            {%else%}
+            <div class="comments">
+                <p class="titl-komentar" id="not-good">Kurang baik</p>
+
+                <p class="rekomendasi">Wah nilaimu diprediksi kurang memuaskan, nih. Jangan khawatir, ini hanya prediksi aja kok. Agar prediksi ini tidak sungguhan terjadi, datanglah ke</p> 
+                <p class="iklan">Fajpeg Academy</p> 
+            </div>
+
+            
+
+            {%endif%}
+        </div>
+
+<html>
+
+<!-- <body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  Prediksi Nilai Anda adalah :  </h1>
+    
+    
+    {{array}}
+   
+</body>
+
+</html> -->
